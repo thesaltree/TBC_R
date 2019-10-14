@@ -1,0 +1,13 @@
+##Section: 2.1    Page No.:76
+
+##install.packages("prob")
+##install.packages("dice")
+##install.packages("gtools")
+
+library(dice)
+library(gtools)
+
+##getEventProb: Calculate the probability of a specified set of dice-rolling events
+p=getEventProb(nrolls = 1, ndicePerRoll = 1, nsidesPerDie = 6, eventList = list(1), orderMatters = FALSE)
+
+cat("The probability of getting 1 is",p)
